@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /**
 * Copyright (c) 2026 Fonte-Boa Lázaro Torres
@@ -14,4 +15,16 @@ if ($id) {
     $stmt->execute([$id]);
 }
 header('Location: reservas.php');
+=======
+<?php
+require_once '../config.php';
+session_start();
+if (!isset($_SESSION['usuario_id'])) header('Location: login.php');
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+if ($id) {
+    $stmt = $pdo->prepare("DELETE FROM reservas WHERE id=?");
+    $stmt->execute([$id]);
+}
+header('Location: reservas.php');
+>>>>>>> fc66e454e6b4da9575f2252dfdc7bf544e9b1f52
 exit;

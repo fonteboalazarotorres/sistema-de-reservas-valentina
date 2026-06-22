@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /**
 * Copyright (c) 2026 Fonte-Boa Lázaro Torres
 * Licensed under the Apache License, Version 2.0
 * See: https://www.apache.org/licenses/LICENSE-2.0
 */
 
+=======
+>>>>>>> fc66e454e6b4da9575f2252dfdc7bf544e9b1f52
 $(document).ready(function() {
     // Atualiza disponibilidade quando algum campo relevante muda
     $('#data_reserva, #hora_entrada, #hora_saida, #quantidade_pessoas').on('change', function() {
