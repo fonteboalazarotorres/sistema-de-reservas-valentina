@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sistema de Reservas VALENTINA
 
 ## 📘 Descrição
