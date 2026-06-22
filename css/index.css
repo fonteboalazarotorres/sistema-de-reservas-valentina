@@ -1,0 +1,115 @@
+/**
+* Copyright (c) 2026 Fonte-Boa Lázaro Torres
+* Licensed under the Apache License, Version 2.0
+* See: https://www.apache.org/licenses/LICENSE-2.0
+*/
+
+body {
+    margin: 0; padding: 0; min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #38b6ff 0%, #2776e1 100%);
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+.row.g-3 > div {
+    display: flex;
+}
+.card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 20px;
+    min-height: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #e0ecff;
+}
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #cfd8f7;
+}
+.badge-success {
+    background-color: #2dc653 !important;
+    font-weight: 600;
+    padding: 0.4em 0.75em;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    align-self: flex-start;
+    border-radius: 12px;
+}
+.badge-danger {
+    background-color: #e03e3e !important;
+    font-weight: 600;
+    padding: 0.4em 0.75em;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    align-self: flex-start;
+    border-radius: 12px;
+}
+.btn-primary {
+    background-color: #f9c700;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #212529;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #c9a102;
+    outline: none;
+    transform: scale(1.05);
+}
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.horario-liberacao {
+    font-size: 0.9rem;
+    color: #ffd966;
+    margin-bottom: 16px;
+}
+@media (min-width: 576px) {
+    .row.g-3 > div {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+}
+@media (min-width: 992px) {
+    .row.g-3 > div {
+        flex: 1 1 calc(25% - 18px);
+        max-width: calc(25% - 18px);
+    }
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    text-outline: none;
+}

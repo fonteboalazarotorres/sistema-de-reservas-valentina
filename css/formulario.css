@@ -1,0 +1,130 @@
+/**
+* Copyright (c) 2026 Fonte-Boa Lázaro Torres
+* Licensed under the Apache License, Version 2.0
+* See: https://www.apache.org/licenses/LICENSE-2.0
+*/
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #38b6ff 0%, #2776e1 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centraliza o card na tela */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card visual moderno */
+.card {
+    background: rgba(255,255,255,0.10);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    border: none;
+    padding: 0;
+}
+
+.card-header {
+    background: #198cff !important;
+    color: #fff !important;
+    border-radius: 16px 16px 0 0 !important;
+    font-size: 1.25rem;
+    padding: 16px 28px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    box-shadow: 0 1.5px 8px rgba(0,0,0,0.05);
+}
+
+/* Inputs e selects arredondados */
+.form-control,
+.form-select {
+    border-radius: 22px;
+    padding: 13px 18px;
+    background: #fff;
+    font-size: 15px;
+    color: #444;
+    border: none;
+    box-shadow: 0 1.5px 6px rgba(0,0,0,0.06);
+    transition: box-shadow 0.18s;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 2px 12px rgba(33,140,255,0.16);
+    border-color: #198cff;
+}
+
+/* Checkbox grupo visual consistente */
+.form-check-input {
+    border-radius: 6px;
+    border: 1px solid #198cff;
+}
+.form-check-input:checked {
+    background-color: #198cff;
+    border-color: #198cff;
+}
+
+/* Botão principal amarelo moderno */
+.btn-primary,
+#btnReservar {
+    background: #f9c700;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 22px;
+    padding: 13px 0;
+    box-shadow: 0 2px 9px rgba(0,0,0,0.06);
+    transition: background 0.19s;
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover,
+#btnReservar:hover {
+    background: #c9a102;
+}
+
+/* Espaçamento moderno */
+.card-body {
+    padding: 32px 32px 32px 32px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: #f4f4f4;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+.rodape 
+{
+   color: #fff;
+}

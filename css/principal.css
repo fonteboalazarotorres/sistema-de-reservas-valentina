@@ -1,0 +1,124 @@
+/**
+* Copyright (c) 2026 Fonte-Boa Lázaro Torres
+* Licensed under the Apache License, Version 2.0
+* See: https://www.apache.org/licenses/LICENSE-2.0
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #38b6ff 0%, #2776e1 100%);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Container principal */
+.container {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Grid responsivo para cartões das salas */
+.salas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Cards das salas com aspecto translúcido */
+.sala-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 180px;
+}
+
+.sala-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Título da sala */
+.sala-nome {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #e0ecff;
+}
+
+/* Informações de capacidade */
+.sala-capacidade {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #cfd8f7;
+}
+
+/* Badges de status */
+.badge-disponivel {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 0.4em 0.8em;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    margin-bottom: 16px;
+}
+
+.badge-ocupada {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    padding: 0.4em 0.8em;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Botão reservar */
+.btn-reservar {
+    background-color: #f9c700;
+    color: #212529;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-reservar:hover,
+.btn-reservar:focus {
+    background-color: #c9a102;
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Texto para horário de liberação */
+.horario-liberacao {
+    font-size: 0.9rem;
+    color: #ffd966;
+    margin-bottom: 16px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+}
