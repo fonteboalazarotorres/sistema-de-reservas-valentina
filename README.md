@@ -70,7 +70,7 @@ Você pode obter o sistema de duas formas:
 #### Opção A: clonar o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone <(https://github.com/fonteboalazarotorres/sistema-de-reservas-valentina.git)>
 ```
 
 #### Opção B: baixar o projeto manualmente
