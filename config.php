@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
 * Copyright (c) 2026 Fonte-Boa Lázaro Torres
@@ -7,10 +6,10 @@
 */
 
 // Configurações do banco de dados
-define('DB_HOST', 'localhost');
-define('DB_USER', 'sistema_valentina');
-define('DB_PASS', 'cvjpU9AhABAnZYy8RfFg');
-define('DB_NAME', 'sistema_valentina');
+define('DB_HOST', 'seu host');
+define('DB_USER', 'seu usuario');
+define('DB_PASS', 'sua senha');
+define('DB_NAME', 'nome do banco de dados');
 
 // Conexão com o banco de dados
 try {
